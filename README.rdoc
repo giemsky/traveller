@@ -1,0 +1,24 @@
+= The Traveller
+
+Each player is given a traveler. Player has to carry him through all the cities. Player whose traveler visited all cities wins.
+
+== Rules
+
+* player can choose starting city for his traveler
+* cities can be connected with rails tracks
+* traveler can move only on his player's tracks
+* traveler can move only by one city per turn
+* traveler's move takes the whole turn
+* distances between cities are different
+* both cities can be connected only by one track
+* each city connection must be build at once, there musn't be tracks with dead end
+* not all cities can be connected with each other
+* track belongs to player that built it
+* building track takes the whole turn
+* tracks can be demolished by any player, it consumes the whole turn
+* once demolished track can be rebuilt and cannot be demolished again
+* each city give a bonus for the first traveler that reaches them first (e.g. damage one opponent's track for one turn, destroy opponent's track, block opponent's traveler for one turn, abbillity  to build a track and move traveler in the same turn, ...)
+* the bonus is represented by the card that is given to the player and can be used anytime further in the game
+* cards can be used along with normal turn
+* there are also bonus cards for reaching distance, traveller already travelled, they are the same as city bonuses
+* in one turn, player can do only one of the following things: move his traveler, build a track, destroy a track

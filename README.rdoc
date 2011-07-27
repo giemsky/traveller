@@ -22,3 +22,18 @@ Each player is given a traveler. Player has to carry him through all the cities.
 * cards can be used along with normal turn
 * there are also bonus cards for reaching distance, traveller already travelled, they are the same as city bonuses
 * in one turn, player can do only one of the following things: move his traveler, build a track, destroy a track
+
+== Contributing to Traveller
+ 
+* Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
+* Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
+* Fork the project
+* Start a feature/bugfix branch
+* Commit and push until you are happy with your contribution
+* Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
+* Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
+
+== Copyright
+
+Copyright (c) 2011 Grzegorz Miklaszewski. See LICENSE.txt for
+further details.

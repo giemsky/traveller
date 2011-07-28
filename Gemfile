@@ -9,4 +9,5 @@ group :development do
   gem "shoulda", ">= 0"
   gem "bundler", "~> 1.0.0"
   gem "rake"
+  gem "ruby-debug"
 end

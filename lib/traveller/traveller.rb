@@ -11,7 +11,8 @@ module Traveller
     def move(city, distance)
       @current_city = city
       @visited_cities.push(city)
-      @travelled_dictance += distance
+      @travelled_distance += distance
+      city.visit
     end
   end
 end

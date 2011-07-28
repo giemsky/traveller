@@ -7,3 +7,11 @@ require 'traveller/move'
 require 'traveller/player'
 require 'traveller/track'
 require 'traveller/traveller'
+
+module Traveller
+  class TrackExistsError            < StandardError; end
+  class NoTrackToDestroyError       < StandardError; end
+  class AlreadyDestroyedTrackError  < StandardError; end
+  class NoConnectionError           < StandardError; end
+  class NoTrackForMoveError         < StandardError; end
+end

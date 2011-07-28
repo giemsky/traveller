@@ -1,13 +1,18 @@
 module Traveller
   class City
-    attr_reader :bonus_card
     
     def initialize(bonus_card = nil)
       @bonus_card = bonus_card
+      @visited    = false
     end
     
-    def clear_bonus_card
-      @bonus_card = nil
+    def card_available
+      @visited ? nil : @bonus_card
     end
+    
+    def visit
+      @visited = true
+    end
+    
   end
 end

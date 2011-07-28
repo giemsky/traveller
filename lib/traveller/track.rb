@@ -16,6 +16,11 @@ module Traveller
       @was_destroyed
     end
     
+    def rebuild(player)
+      @destroyed = false
+      @owner     = player
+    end
+    
     def destroy
       raise AlreadyDestroyedTrackError if destroyed?
 

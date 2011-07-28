@@ -24,8 +24,8 @@ module Traveller
       next_move
     end
     
-    def use_card(card)
-      
+    def use_card(card, *params)
+      @current_move.use_card(card, *params)
     end
     
     private

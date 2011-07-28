@@ -1,9 +1,9 @@
 module Traveller
   class City
+    attr_writer :bonus_card
     
-    def initialize(bonus_card = nil)
-      @bonus_card = bonus_card
-      @visited    = false
+    def initialize
+      @visited = false
     end
     
     def card_available

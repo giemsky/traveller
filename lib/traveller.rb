@@ -7,6 +7,7 @@ require 'traveller/move'
 require 'traveller/player'
 require 'traveller/track'
 require 'traveller/traveller'
+require 'traveller/cards'
 
 module Traveller
   class TrackExistsError            < StandardError; end
@@ -14,4 +15,6 @@ module Traveller
   class AlreadyDestroyedTrackError  < StandardError; end
   class NoConnectionError           < StandardError; end
   class NoTrackForMoveError         < StandardError; end
+  class TrackDestroyedBeforeError   < StandardError; end
+  class AlreadyUsedCardError   < StandardError; end
 end

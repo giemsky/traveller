@@ -24,8 +24,8 @@ module Traveller
       connection.destroy_track
     end
     
-    def use_card(card)
-      
+    def use_card(card, *params)
+      card.use(self, *params)
     end
   end
 end

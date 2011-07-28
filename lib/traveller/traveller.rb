@@ -3,9 +3,9 @@ module Traveller
     attr_reader :current_city, :visited_cities, :travelled_distance
     
     def initialize(starting_city)
-      @current_city       = starting_city
-      @visited_cities     = [starting_city]
+      @visited_cities     = []
       @travelled_distance = 0
+      move(starting_city, 0)
     end
     
     def move(city, distance)

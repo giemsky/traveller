@@ -9,13 +9,18 @@ module Traveller
     end
     
     def add_track(owner)
-      raise TrackExistsError if track && !track.destroyed?
+      raise TrackExistsError if @track && !@track.destroyed?
       
-      @track = Track.new(owner)
+      if @track && @track.destroyed?
+        @track.rebuild(owner)
+      else
+        @track = Track.new(owner)
+      end
     end
     
     def destroy_track
       raise NoTrackToDestroyError unless track
+      raise TrackDestroyedBeforeError if track.was_destroyed?
       
       @track.destroy
     end
